@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:salmon;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  /* line-height: 35px;
+  word-spacing: 5px;
+  font-size: 26px; */
+}
+
+.mySlides {display: none;}
+img {vertimages/ical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  /* margin: auto; */
+  width: 100%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+  about-section {font-size: 16px;}
+}
+.nyradiv1 {
+  background-image: url('images/nyra1.jpeg');
+  background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+
+
+ /* background-repeat: no-repeat; */
+}
+.nyradiv2 {
+  background-image: url('images/nyra2.jpeg');
+  /* background-size: 100% 400px; */
+  background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+
+
+
+
+ /* background-repeat: no-repeat; */
+}
+.nyradiv3 {
+
+  background-image: url('images/nyra3.jpeg');
+  /* background-size: 100% 400px; */
+  background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+
+ /* background-repeat: no-repeat; */
+}
+
+.anarkalidiv1 {
+  background-image: url('images/anarkali1.jpeg');
+  background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+
+
+
+ /* background-repeat: no-repeat; */
+}
+.anarkalidiv2 {
+  background-image: url('images/anarkali2.jpeg');
+  background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+
+
+ /* background-repeat: no-repeat; */
+}
+.anarkalidiv3 {
+
+  background-image: url('images/anarkali3.jpeg');
+  background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+
+ /* background-repeat: no-repeat; */
+}
+.suitdiv1 {
+
+background-image: url('images/suit1.jpeg');
+background-size: 100% 300px;
+border: 10px solid white;
+/* background-repeat: no-repeat; */
+}
+
+.suitdiv2 {
+
+background-image: url('images/suit2.jpeg');
+background-size: 100% 300px;
+border: 10px solid white;
+
+/* background-repeat: no-repeat; */
+}
+.suitdiv3 {
+
+background-image: url('images/suit3.jpeg');
+background-size: 100% 300px;
+border: 10px solid white;
+
+/* background-repeat: no-repeat; */
+}
+.suitdiv4 {
+
+background-image: url('images/suit4.jpeg');
+background-size: 100% 300px;
+border: 10px solid white;
+
+/* background-repeat: no-repeat; */
+}
+.suitdiv5 {
+
+background-image: url('images/suit5.jpeg');
+background-size: 100% 300px;
+border: 10px solid white;
+
+/* background-repeat: no-repeat; */
+}
+
+.suitdiv6 {
+
+background-image: url('images/suit6.jpeg');
+background-size: 100% 300px;
+border: 10px solid white;
+
+/* background-repeat: no-repeat; */
+}
+.pakistanidiv1 {
+
+background-image: url('images/pakistani1.jpeg');
+background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+/* background-repeat: no-repeat; */
+}
+
+.pakistanidiv2 {
+
+background-image: url('images/pakistani2.jpeg');
+background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+/* background-repeat: no-repeat; */
+}
+
+.pakistanidiv3 {
+
+background-image: url('images/pakistani3.jpeg');
+background-size: 100% 700px;
+  height:700px;
+  border: 30px solid white;
+/* background-repeat: no-repeat; */
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#Nyra">Nyra Collection</a>
+  <a href="#Anarkali">Anarkali Collection</a>
+  <a href="#Cotton">Cotton Suit Collection</a>
+  <a href="#Pakistani">Pakistani Suit Collection</a>
+  <a href="#Contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  
+</div>
+
+<div class="about-section" >
+    <h1>Elevate Your Style with ZEESHA: Your One-Stop Garment Shop </h1>
+    <p>Your premier destination for top-quality garments that seamlessly blend elegance and affordability.</p>
+    <p>Experience the luxury of high-end fashion without the premium price tag. </p>
+    <p>Upgrade your wardrobe with ZEESHA today and step out in confidence and sophistication.</p>
+  </div>
+
+<div class="slideshow-container" style="width:100%">
+
+<div class="mySlides fade" >
+  <div class="numbertext">1 / 3</div>
+  <img src="images/image1.jpg" style="width:100%">
+  <div class="text">ZEESHA Magic</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/image2.jpg" style="width:100%">
+  <div class="text">ZEESHA Quality</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/image4.jpg" style="width:100%">
+  <div class="text">ZEESHA Environment</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<!-- about  -->
+<section class="text-gray-600 body-font" data-aos="fade-right" data-aos-offset="200" data-aos-duration="4000" id="about">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+      <img alt="feature" class="object-cover object-center h-full w-full" src="images/logo.jpeg">
+    </div>
+    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <!-- <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"> -->
+          <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg> -->
+        <!-- </div> -->
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Objective</h2>
+          <p class="leading-relaxed text-base">Our objective at ZEESHA is to redefine elegance and style in women's fashion by offering a curated collection of Anarkali suits, cotton suits, Pakistani suits, and Nyra cloth. We aim to provide our customers with a seamless online shopping experience that reflects our commitment to quality, design, and customer satisfaction.</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <!-- <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"> -->
+          <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg> -->
+        <!-- </div> -->
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Aim</h2>
+          <p class="leading-relaxed text-base">Our aim is to become the go-to destination for women seeking exquisite and diverse ethnic wear. We strive to showcase the rich heritage of clothing while embracing modern trends, catering to a wide range of preferences and occasions. ZEESHA aims to foster confidence and empowerment among women by providing them with clothing that not only looks stunning but also reflects their individuality.</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <!-- <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"> -->
+          <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg> -->
+        <!-- </div> -->
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Why Choose ZEESHA</h2>
+          <p class="leading-relaxed text-base">Affordable Luxury <br> Fashion Expertise <br> Customer-Centric Experience </p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- our collection  -->
+
+<section class="text-gray-600 body-font" id="Nyra">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">NYRA COLLECTION</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Elevate your style with NYRA, where elegance meets comfort in every stitch</p>
+    </div>
+    <div class="flex flex-wrap -m-4 ">
+      <div class="lg:w-1/3 sm:w-1/2 p-4 nyradiv1" data-aos="flip-left" data-aos-offset="120" data-aos-duration="1000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover" src="nyra1.jpeg" > -->
+
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4  nyradiv2" data-aos="flip-right" data-aos-offset="120" data-aos-duration="1000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full " src="nyra2.jpeg"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4  nyradiv3" data-aos="flip-left" data-aos-offset="120" data-aos-duration="1000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full" src="nyra3.jpeg"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/602x362">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/605x365">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/606x366">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+</section>
+
+<!-- anarkali  -->
+
+<section class="text-gray-600 body-font" id="Anarkali">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">ANARKALI  COLLECTION</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">"Wrap yourself in the beauty of ANARKALI, designed to empower and inspire</p>
+    </div>
+    <div class="flex flex-wrap -m-4 ">
+      <div class="lg:w-1/3 sm:w-1/2 p-4 anarkalidiv1" data-aos="fade-up" data-aos-offset="150" data-aos-duration="1200">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover" src="nyra1.jpeg" > -->
+
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4  anarkalidiv2" data-aos="fade-down" data-aos-offset="150" data-aos-duration="1300">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full " src="nyra2.jpeg"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4  anarkalidiv3" data-aos="fade-up" data-aos-offset="150" data-aos-duration="1400">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full" src="nyra3.jpeg"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- cotton suit  -->
+
+<section class="text-gray-600 body-font" id="Cotton">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Cotton Suits Collection</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Experience the breath of comfort with our Cotton Suits - where style meets ease effortlessly.</p>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/3 sm:w-1/2 p-4 suitdiv1" data-aos="flip-right" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 suitdiv2" data-aos="flip-right" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/601x361"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 suitdiv3" data-aos="flip-right" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/603x363"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 suitdiv4" data-aos="flip-right" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/602x362"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 suitdiv5" data-aos="flip-right" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/605x365"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 suitdiv6" data-aos="flip-right" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative ">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/606x366"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pakistani  -->
+
+<section class="text-gray-600 body-font" id="Pakistani">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">PAKASTANI SUIT COLLECTION</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Discover the perfect blend of tradition and contemporary style with our Pakistani Suits</p>
+    </div>
+    <div class="flex flex-wrap -m-4 ">
+      <div class="lg:w-1/3 sm:w-1/2 p-4 pakistanidiv1" data-aos="flip-up" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full object-cover" src="nyra1.jpeg" > -->
+
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4  pakistanidiv2" data-aos="flip-down" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full " src="nyra2.jpeg"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4  pakistanidiv3" data-aos="flip-up" data-aos-offset="150" data-aos-duration="2000">
+        <div class="flex relative">
+          <!-- <img alt="images/gallery" class="absolute inset-0 w-full h-full" src="nyra3.jpeg"> -->
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact  -->
+
+    <section class="text-gray-600 body-font relative" id="Contact">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Reach Our Stylists</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Unlock Your Unique Style: Expert Fashion Guidance from Our Dedicated Stylists</p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Contact</button>
+            </div>
+            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+              <a class="text-indigo-500">zeenatnadeem11@gmail.com</a>
+              <p class="leading-normal my-5">53, Ripon Street Kolkata 16  
+                <br>beside Zevar Mahal.
+              </p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- fotter  -->
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24"> -->
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">ZEESHA</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©2023 ZEESHA —
+      <a href="https://instagram.com/zeesha_style?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@zeesha_style</a>
+    </p>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+  9831217111  <br> 7439873986
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      
+     <a class="text-gray-500" href="https://www.mahavirascoding.in"> <span class="ml-3 text-xl">created by mahavirascoding</span></a>
+      
+      <!-- <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a> -->
+    </span>
+  </div>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); 
+}
+
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
